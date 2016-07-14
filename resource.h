@@ -1,0 +1,126 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by Othello.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define ID_MENU_ABOUTBOX                0x0010
+#define IDD_OTHELLO_DIALOG              102
+#define IDS_MINIBOX                     102
+#define IDD_COMPUTERPIECEDLG_DIALOG     103
+#define IDD_OPENINGDLG_DIALOG           104
+#define IDD_LIBRARYVIEWDLG_DIALOG       105
+#define IDD_ABOUTBOX_DIALOG             115
+#define IDR_MAINFRAME                   128
+#define IDB_WCH                         129
+#define IDB_WHC                         130
+#define IDB_BCH                         131
+#define IDB_BHC                         132
+#define IDB_BLANK                       133
+#define IDB_HTB                         134
+#define IDB_HTW                         135
+#define IDB_BBM                         136
+#define IDB_BHD                         137
+#define IDB_BLF                         138
+#define IDB_BRT                         139
+#define IDR_MENU1                       140
+#define IDR_MAIN_MENU                   140
+#define IDR_ACCELERATOR_MAIN            142
+#define IDB_TREENODE                    144
+#define IDR_TOPENBK1                    146
+#define IDR_WAVE1                       147
+#define IDB_LOGO                        148
+#define IDB_B2W                         158
+#define IDD_DIAGRAM_DIALOG              159
+#define IDD_TIMELIMITED_DIALOG          160
+#define IDR_MENU_POPUP1                 164
+#define IDC_NEW_GAME                    1000
+#define IDC_COMP_INFO                   1001
+#define IDC_LBL_B_CH                    1005
+#define IDC_LBL_W_CH                    1006
+#define IDC_LBL_N_CH                    1007
+#define IDC_STATIC_LINE                 1008
+#define IDC_COMPUTER_SIDE               1010
+#define IDC_LIST_STEP                   1011
+#define IDC_COMBO1                      1012
+#define IDC_COMBO2                      1013
+#define IDC_STATIC_BNAME                1013
+#define IDC_STATIC_WNAME                1014
+#define IDC_STATIC_VAL                  1015
+#define IDC_STATIC_COMMENT              1016
+#define IDC_STATIC_TIME                 1017
+#define IDC_BUTTON_EXCHANGE             1019
+#define IDC_TREEVIEW                    1020
+#define IDC_STATIC_CONTENT              1022
+#define IDC_RADIO_C4                    1023
+#define IDC_RADIO_D3                    1024
+#define IDC_RADIO_E6                    1025
+#define IDC_RADIO_F5                    1026
+#define IDC_LIST1                       1028
+#define IDC_STATIC_CONTEXT              1029
+#define IDC_EDIT_NAME                   1030
+#define IDC_STATIC_PIC                  1031
+#define IDC_STATIC_TRACE                1032
+#define IDC_STATIC_BLACKTIME            1040
+#define IDC_STATIC_WHITETIME            1041
+#define IDC_STATIC_DIAGRAM              1042
+#define IDC_RADIO_TYPE                  1047
+#define IDC_RADIO2                      1048
+#define IDC_RADIO3                      1049
+#define IDC_RADIO4                      1050
+#define IDC_RADIO5                      1051
+#define IDC_EDIT1                       1052
+#define IDC_SPIN_LIMIT                  1053
+#define IDC_LIST_CONSOLE                1059
+#define IDC_COMBO_CMD                   1060
+#define IDC_SBARCTRL_MAIN               1062
+#define IDC_MAP1                        1066
+#define ID_MENUITEM32772                32772
+#define ID_MENU_OPEN                    32772
+#define ID_MENUITEM32773                32773
+#define ID_MENU_SAVE                    32773
+#define ID_COMPUTER_W_CH                32774
+#define ID_COMPUTER_B_CH                32775
+#define ID_MENU_REGRET                  32777
+#define ID_MENUITEM32778                32778
+#define ID_MENU_REDO                    32778
+#define ID_MENUITEM32780                32780
+#define ID_MENU_BOARD_NORMAL            32780
+#define ID_MENUITEM32781                32781
+#define ID_MENU_BOARD_ABNORMAL          32781
+#define ID_COMPUTER_N_CH                32782
+#define ID_MENU_COMPUTERPIECE           32783
+#define ID_MENU_TOPMOST                 32784
+#define ID_MENU_OPENINGBOOK             32785
+#define ID_MENU_OPENLIBRARY             32786
+#define ID_MENU_COMPUTER_REFRESH        32787
+#define ID_MENU_LOCSOUND                32789
+#define ID_MENU_STOPSEARCH              32790
+#define ID_MENU_HINTPOINT               32791
+#define ID_MENU_NEW_MATCH               32792
+#define ID_MENU_OPEN_MATCH              32793
+#define ID_MENU_HELP_CONTENT            32794
+#define ID_MENU_CHESSBOOK               32795
+#define ID_MENUCOMPUTER_REFRESH         32799
+#define ID_MENU_SHOWDATA                32806
+#define ID_MENU_ANIMATION               32807
+#define ID_MENU_SHOWDIAGRAM             32808
+#define ID_MENU_SAVEDIAGRAM             32809
+#define ID_MENU_OPENDIAGRAM             32810
+#define ID_MENU_SETLIMITED              32812
+#define ID_MENU_CONSOLE_CLEAR           32813
+#define ID_MENU_CONSOLE_SAVE            32814
+#define ID_MENU_TURN_R                  32815
+#define ID_MENU_TURN_L                  32816
+#define ID_MENU_PAUSEGAME               32817
+#define ID_MENU_TRAINING                32818
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        165
+#define _APS_NEXT_COMMAND_VALUE         32819
+#define _APS_NEXT_CONTROL_VALUE         1067
+#define _APS_NEXT_SYMED_VALUE           116
+#endif
+#endif

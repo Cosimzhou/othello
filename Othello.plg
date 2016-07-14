@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Othello - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Othello.res" /d "_DEBUG" /d "_AFXDLL" "E:\Microsoft Visual Studio\Microsoft Visual C++\ºÚ°×Æå\Othello\Othello.rc"" 
+Creating temporary file "C:\Users\Cosim\AppData\Local\Temp\RSP808D.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Othello.pdb" /debug /machine:I386 /out:"Debug/Othello.exe" /pdbtype:sept 
+".\Debug\MidiOutput.obj"
+".\Debug\MusicPlayer.obj"
+".\Debug\ScoreDocument.obj"
+".\Debug\ZPDocument.obj"
+".\Debug\ZPKeyMap.obj"
+".\Debug\AboutBox.obj"
+".\Debug\AnnBp.obj"
+".\Debug\ArtBaseSolve.obj"
+".\Debug\ArtEndSolve.obj"
+".\Debug\ArtEngine.obj"
+".\Debug\ArtEvaluation.obj"
+".\Debug\ArtMidSolve.obj"
+".\Debug\ArtStaSolve.obj"
+".\Debug\BasicEngine.obj"
+".\Debug\ComputerPieceDlg.obj"
+".\Debug\ComputerThink.obj"
+".\Debug\DiagramDlg.obj"
+".\Debug\EvaluatorMother.obj"
+".\Debug\Game.obj"
+".\Debug\GameScript.obj"
+".\Debug\Graphic.obj"
+".\Debug\ImprovedEngine.obj"
+".\Debug\ImprovedEvaluation.obj"
+".\Debug\LibraryViewDlg.obj"
+".\Debug\NankEngine.obj"
+".\Debug\OpeningDlg.obj"
+".\Debug\OpeningReader.obj"
+".\Debug\Othello.obj"
+".\Debug\OthelloDlg.obj"
+".\Debug\RegionEvaluator.obj"
+".\Debug\RowEvaluator.obj"
+".\Debug\SetTimeLimitDlg.obj"
+".\Debug\SevenEngine.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ThunderEngine.obj"
+".\Debug\Othello.res"
+]
+Creating command line "link.exe @C:\Users\Cosim\AppData\Local\Temp\RSP808D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Othello.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

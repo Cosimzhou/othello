@@ -1,0 +1,576 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Othello.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Othello.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OTHELLO_DIALOG DIALOGEX 0, 0, 397, 359
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "黑白棋游戏的算法研究与实现-V1.0"
+MENU IDR_MAIN_MENU
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_COMP_INFO,300,1,95,64,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_OEMCONVERT | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Ready...",IDC_STATIC_COMMENT,259,348,137,11,0,
+                    WS_EX_CLIENTEDGE
+    CTEXT           "黑子",IDC_STATIC,23,349,20,10
+    CTEXT           "60",IDC_LBL_B_CH,44,348,15,11,0,WS_EX_CLIENTEDGE
+    CTEXT           "白子",IDC_STATIC,80,349,24,10
+    CTEXT           "60",IDC_LBL_W_CH,104,348,16,11,0,WS_EX_CLIENTEDGE
+    CTEXT           "空格",IDC_STATIC,120,349,23,10
+    CTEXT           "60",IDC_LBL_N_CH,143,348,15,11,0,WS_EX_CLIENTEDGE
+    CTEXT           "估值",IDC_STATIC,159,349,20,10
+    CTEXT           "0",IDC_STATIC_VAL,179,348,26,11,0,WS_EX_CLIENTEDGE
+    CONTROL         "List1",IDC_LIST_STEP,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,300,123,94,
+                    155,WS_EX_STATICEDGE
+    CTEXT           "人类1",IDC_STATIC_BNAME,0,349,23,10
+    CTEXT           "人类2",IDC_STATIC_WNAME,59,349,23,10
+    CTEXT           "时间",IDC_STATIC,207,349,20,10
+    CTEXT           "0.0",IDC_STATIC_TIME,227,348,33,11,0,WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_TRACE,300,69,96,11,0,WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_LINE,0,297,396,1,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "时间",IDC_STATIC,300,81,95,39
+    CTEXT           "00:00",IDC_STATIC_BLACKTIME,348,91,37,11,NOT WS_GROUP,
+                    WS_EX_CLIENTEDGE
+    CTEXT           "00:00",IDC_STATIC_WHITETIME,348,105,37,11,NOT WS_GROUP,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "黑方用时",IDC_STATIC,306,92,40,10
+    LTEXT           "白方用时",IDC_STATIC,306,106,39,11
+    LISTBOX         IDC_LIST_CONSOLE,0,300,396,47,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CMD,300,282,94,84,CBS_DROPDOWN | CBS_UPPERCASE | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_COMPUTERPIECEDLG_DIALOG DIALOG DISCARDABLE  0, 0, 168, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置执棋权"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,29,55,50,14
+    PUSHBUTTON      "取消",IDCANCEL,99,55,50,14
+    LTEXT           "黑棋方",IDC_STATIC,7,15,36,14
+    LTEXT           "白棋方",IDC_STATIC,7,33,36,14
+    COMBOBOX        IDC_COMBO1,47,14,86,133,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,47,32,86,133,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "交换",IDC_BUTTON_EXCHANGE,136,22,25,16
+END
+
+IDD_OPENINGDLG_DIALOG DIALOGEX 0, 0, 244, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "开局库"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,187,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,187,24,50,14
+    CONTROL         "Tree1",IDC_TREEVIEW,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,7,176,180,WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_CONTENT,7,193,230,12,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "第一手",IDC_STATIC,185,109,52,78
+    CONTROL         "C4",IDC_RADIO_C4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    193,123,40,11
+    CONTROL         "D3",IDC_RADIO_D3,"Button",BS_AUTORADIOBUTTON,193,140,38,
+                    9
+    CONTROL         "F5",IDC_RADIO_E6,"Button",BS_AUTORADIOBUTTON,193,155,37,
+                    12
+    CONTROL         "E6",IDC_RADIO_F5,"Button",BS_AUTORADIOBUTTON,193,172,37,
+                    10
+END
+
+IDD_LIBRARYVIEWDLG_DIALOG DIALOGEX 0, 0, 265, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对局库"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,208,57,50,14
+    PUSHBUTTON      "取消",IDCANCEL,208,90,50,14
+    LISTBOX         IDC_LIST1,7,7,194,188,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC_CONTEXT,7,201,251,14,0,WS_EX_CLIENTEDGE
+END
+
+IDD_ABOUTBOX_DIALOG DIALOG DISCARDABLE  0, 0, 356, 198
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_STATIC_PIC,"Static",SS_BLACKFRAME,69,7,280,158
+END
+
+IDD_DIAGRAM_DIALOG DIALOGEX 0, 0, 259, 228
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "结果分析图"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,125,207,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,202,207,50,14
+    CONTROL         "",IDC_STATIC_DIAGRAM,"Static",SS_BLACKFRAME,7,7,245,156,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "元素图例",IDC_STATIC,7,166,245,33
+    LTEXT           "注:人的数据不会显示",IDC_STATIC,7,209,106,12
+    CONTROL         "棋子差",IDC_RADIO_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,181,37,11
+    CONTROL         "棋子数",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,59,181,
+                    33,11
+    CONTROL         "计算用时",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,102,
+                    181,41,11
+    CONTROL         "节点数",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,151,180,
+                    39,12
+    CONTROL         "估值",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,199,180,29,
+                    11
+END
+
+IDD_TIMELIMITED_DIALOG DIALOG DISCARDABLE  0, 0, 138, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置算法时限"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,64,49,31,14
+    PUSHBUTTON      "取消",IDCANCEL,100,49,31,14
+    EDITTEXT        IDC_EDIT1,70,20,33,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_LIMIT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,95,23,9,8
+    LTEXT           "时间限制(秒):",IDC_STATIC,14,21,52,11
+    LTEXT           "注:0为无限制",IDC_STATIC,7,51,54,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Setalligence Studio\0"
+            VALUE "FileDescription", "Othello黑白棋算法研究分析加游戏系统\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Othello\0"
+            VALUE "LegalCopyright", "Copyright (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Othello.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Othello Algorithm Researching & Entertainment System\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WCH                 BITMAP  DISCARDABLE     "res\\w0.bmp"
+IDB_WHC                 BITMAP  DISCARDABLE     "res\\w1.bmp"
+IDB_BCH                 BITMAP  DISCARDABLE     "res\\b0.bmp"
+IDB_BHC                 BITMAP  DISCARDABLE     "res\\b1.bmp"
+IDB_BLANK               BITMAP  DISCARDABLE     "res\\bl.bmp"
+IDB_HTB                 BITMAP  DISCARDABLE     "res\\h1.bmp"
+IDB_HTW                 BITMAP  DISCARDABLE     "res\\h2.bmp"
+IDB_BBM                 BITMAP  DISCARDABLE     "res\\BM.bmp"
+IDB_BHD                 BITMAP  DISCARDABLE     "res\\Hd.bmp"
+IDB_BLF                 BITMAP  DISCARDABLE     "res\\LF.bmp"
+IDB_BRT                 BITMAP  DISCARDABLE     "res\\RT.bmp"
+IDB_TREENODE            BITMAP  DISCARDABLE     "res\\TreeNode.bmp"
+IDB_LOGO                BITMAP  DISCARDABLE     "res\\logo.bmp"
+IDB_B2W                 BITMAP  DISCARDABLE     "res\\bw.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "游戏(&G)"
+    BEGIN
+        MENUITEM "新游戏(&N)\tF4",              IDC_NEW_GAME
+        MENUITEM SEPARATOR
+        MENUITEM "打开存档(&O)...\tCtrl+O",     ID_MENU_OPEN
+        MENUITEM "保存棋局(&S)...\tCtrl+S",     ID_MENU_SAVE
+        MENUITEM "开局棋谱(&P)...\tCtrl+P",     ID_MENU_OPENINGBOOK
+        MENUITEM "打开对局库(&L)...\tCtrl+L",   ID_MENU_OPENLIBRARY
+        MENUITEM SEPARATOR
+        MENUITEM "电脑执棋(&C)...\tF7",         ID_MENU_COMPUTERPIECE
+        MENUITEM "停止思考(&T)\tF10",           ID_MENU_STOPSEARCH
+        MENUITEM "电脑暂停(&Y)\tF9",            ID_MENU_PAUSEGAME
+        MENUITEM "电脑重做(&D)\tF5",            ID_MENUCOMPUTER_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "悔棋(&R)\t←",                ID_MENU_REGRET
+        MENUITEM "重做(&U)\t→",                ID_MENU_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)\tAlt+F4",            IDCANCEL
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        POPUP "初始棋盘"
+        BEGIN
+            MENUITEM "正规(&I)",                    ID_MENU_BOARD_NORMAL
+            MENUITEM "镜像(&L)",                    ID_MENU_BOARD_ABNORMAL
+            MENUITEM SEPARATOR
+            MENUITEM "顺时针90度(&R)",              ID_MENU_TURN_R
+            MENUITEM "逆时针90度(&A)",              ID_MENU_TURN_L
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "落子声音(&S)",                ID_MENU_LOCSOUND, CHECKED
+        MENUITEM "落子动画(&A)",                ID_MENU_ANIMATION, CHECKED
+        MENUITEM "提示落子点(&H)",              ID_MENU_HINTPOINT, CHECKED
+        MENUITEM "显示棋谱数据(&D)",            ID_MENU_SHOWDATA, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "使用棋谱(&P)",                ID_MENU_CHESSBOOK, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "窗体最前(&T)",                ID_MENU_TOPMOST, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "设置时间限制(&L)...",         ID_MENU_SETLIMITED
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        POPUP "分析图"
+        BEGIN
+            MENUITEM "显示分析图(&D)...\tF8",       ID_MENU_SHOWDIAGRAM
+            MENUITEM SEPARATOR
+            MENUITEM "打开分析图(&O)...",           ID_MENU_OPENDIAGRAM
+            MENUITEM "保存分析图(&S)...",           ID_MENU_SAVEDIAGRAM
+        END
+        MENUITEM SEPARATOR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&C)...\tF1",         ID_MENU_HELP_CONTENT
+        MENUITEM SEPARATOR
+        MENUITEM "关于(&A)...",                 ID_MENU_ABOUTBOX
+    END
+END
+
+IDR_MENU_POPUP1 MENU DISCARDABLE 
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "清除(&C)",                    ID_MENU_CONSOLE_CLEAR
+        MENUITEM "保存(&S)",                    ID_MENU_CONSOLE_SAVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COMPUTERPIECEDLG_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0xcbc8, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe6cb, 0xe3b1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf3b4, 0xb3ca, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc6d6, 0xafb6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xb2be, 0xc0b9, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc8ce, 0xc0b9, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc9b7, 0xb8c8, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc9b7, 0xe0d1, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xc9b7, 0xd7ba, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xdfb0, 0xaff0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xbdc9, 0xf1b5, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xd4c1, 0xc0f6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf8d2, 0xf3ca, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf1d3, 0xc3cd, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf0bd, 0xaec8, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf0bb, 0xfcba, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xdbd0, 0xa8ca, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf1c9, 0xeab9, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xd7c0, 0xf1c9, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0xcbc8, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xe6cb, 0xe3b1, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xf3b4, 0xb3ca, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xc6d6, 0xafb6, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xb2be, 0xc0b9, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xc8ce, 0xc0b9, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xc9b7, 0xb8c8, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xc9b7, 0xe0d1, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xc9b7, 0xd7ba, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xdfb0, 0xaff0, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xbdc9, 0xf1b5, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xd4c1, 0xc0f6, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xf8d2, 0xf3ca, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xf1d3, 0xc3cd, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xf0bd, 0xaec8, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xf0bb, 0xfcba, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xdbd0, 0xa8ca, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xf1c9, 0xeab9, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xd7c0, 0xf1c9, "\000" 
+    0
+END
+
+IDD_OTHELLO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_CMD, 0x403, 4, 0
+0x4c43, 0x0053, 
+    IDC_COMBO_CMD, 0x403, 4, 0
+0x4d43, 0x0044, 
+    IDC_COMBO_CMD, 0x403, 4, 0
+0x4e45, 0x0044, 
+    IDC_COMBO_CMD, 0x403, 4, 0
+0x454e, 0x0057, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR_MAIN ACCELERATORS DISCARDABLE 
+BEGIN
+    "L",            ID_MENU_OPENLIBRARY,    VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_MENU_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_MENU_OPENINGBOOK,    VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_MENU_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_MENU_HELP_CONTENT,   VIRTKEY, NOINVERT
+    VK_F10,         ID_MENU_STOPSEARCH,     VIRTKEY, NOINVERT
+    VK_F4,          IDC_NEW_GAME,           VIRTKEY, NOINVERT
+    VK_F5,          ID_MENU_COMPUTER_REFRESH, VIRTKEY, NOINVERT
+    VK_F7,          ID_MENU_COMPUTERPIECE,  VIRTKEY, NOINVERT
+    VK_F8,          ID_MENU_SHOWDIAGRAM,    VIRTKEY, NOINVERT
+    VK_F9,          ID_MENU_PAUSEGAME,      VIRTKEY, NOINVERT
+    VK_LEFT,        ID_MENU_REGRET,         VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_MENU_REDO,           VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE    DISCARDABLE     "res\\WAVE_SOUND.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TOPENBK
+//
+
+IDR_TOPENBK1            TOPENBK DISCARDABLE     "res\\开局库.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_OTHELLO_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 396
+        VERTGUIDE, 300
+    END
+
+    IDD_OPENINGDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_LIBRARYVIEWDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_ABOUTBOX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_DIAGRAM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_TIMELIMITED_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Othello.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
